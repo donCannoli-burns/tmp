@@ -1,14 +1,20 @@
 # Temporary transfer: KoL Worker agent reference bundle
 
-This repository is being used as a temporary transfer point for Socel.
+This repository is a temporary transfer point for Socel.
 
-The original uploaded archive is **kol-worker-agent-reference-bundle(1).zip**.
+The archive is committed directly as:
 
-Because the GitHub connector available in this session can only write UTF-8 text files, the ZIP is stored losslessly as base64 text parts. After cloning, reconstruct it with:
+```text
+kol-worker-agent-reference-bundle(1).zip
+```
+
+Clone normally:
 
 ```bash
-cat kol-worker-agent-reference-bundle.zip.b64.part-* | base64 -d > 'kol-worker-agent-reference-bundle(1).zip'
+git clone https://github.com/donCannoli-burns/tmp.git
+cd tmp
 sha256sum 'kol-worker-agent-reference-bundle(1).zip'
+unzip 'kol-worker-agent-reference-bundle(1).zip'
 ```
 
 Expected SHA-256:
@@ -17,10 +23,10 @@ Expected SHA-256:
 a0f3c576ceb8c933121535cdeb594465cab69b0fef2798ec1c31e48f102d99d1
 ```
 
-Then unzip normally:
+The Git blob SHA also matches the original local archive:
 
-```bash
-unzip 'kol-worker-agent-reference-bundle(1).zip'
+```text
+fbe111982d08192cd527e1c9635361b932dc0f5d
 ```
 
-This repo is intentionally temporary and can be deleted after transfer.
+This repo is intentionally temporary and can be deleted after Socel has cloned the bundle.
